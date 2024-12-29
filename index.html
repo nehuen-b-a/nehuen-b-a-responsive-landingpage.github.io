@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a survey form.</p>
+  </header>
+  <form id="survey-form">
+    <fieldset id="personal-details">
+      <h3>Personal Details</h3>
+
+      <div class="field-to-complete">
+        <label id="name-label" for="name" >Name:
+          <input class="long-input" type="text" id="name" name="name" placeholder="Your Name" required/>
+        </label>
+      </div>
+
+      <div class="field-to-complete">
+        <label id="email-label" for="email">Email:
+          <input class="long-input" type="email" id="email" name="email" placeholder="name@example.com" required/>
+        </label>
+      </div>
+
+      <div class="field-to-complete">
+        <label id="number-label" for="number"  min="4" max="120">Random Number[0-999]:
+          <input class="long-input" type="number" id="number" name="number" min="0" max="999" placeholder ="Random" required />
+        </label>
+      </div>
+
+    </fieldset>
+
+    <fieldset id="dropdown-field">
+      <h3>Device Type</h3>
+
+      <div class="field-to-complete">
+        <select class="long-input" id="dropdown">
+            <option value="">Select One!!!</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+        </select>
+      </div>
+    </fieldset>
+
+  <fieldset id="recommendations-to-friends">
+      <h3>Recommendations to Friends</h3>
+      <div class="field-to-complete">
+        <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="field-to-complete">
+        <label for="definitely">
+          <input class="multiple-choice-option" type="radio" id="definitely" name="recommendation" value="definitely" required> Definitely
+        </label>
+      </div>
+      <div class="field-to-complete">
+        <label for="maybe">
+          <input class="multiple-choice-option" type="radio" id="maybe" name="recommendation" value="maybe" required> Maybe
+        </label>
+      </div>
+      <div class="field-to-complete">
+        <label for="not-sure">
+            <input class="multiple-choice-option" type="radio" id="not-sure" name="recommendation" value="not-sure" required> Not sure
+        </label>
+    </div>
+  </fieldset>
+
+ <fieldset id="interests">
+      <h3>Interests</h3>
+      <div class="field-to-complete">
+        <label for="javascript">
+          <input class="multiple-choice-option" type="checkbox" id="javascript" name="interests" value="javascript" > JavaScript
+          </label>
+        
+      </div>
+      <div class="field-to-complete">
+        <label for="html"> 
+          <input class="multiple-choice-option" type="checkbox" id="html" name="interests" value="html" > HTML/CSS
+          </label>
+       
+      </div>
+      <div class="field-to-complete">
+        <label for="react">
+          <input class="multiple-choice-option" type="checkbox" id="react" name="interests" value="react" > React
+          </label>
+        
+      </div>
+    </fieldset>
+<fieldset id="comments">
+  <h3>Comments</h3>
+  <div class="field-to-complete">
+    <label for="comments"></label>
+    <textarea id="comments" name="comments" required placeholder ="Suggest things to improve the platform"></textarea>
+  </div>
+</fieldset>    
+
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
